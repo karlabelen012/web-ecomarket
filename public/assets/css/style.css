@@ -1,0 +1,141 @@
+:root {
+  --verde-principal: #1F3D2B;
+  --verde-secundario: #4F6F52;
+  --verde-claro: #A8C686;
+  --beige: #F6F3EE;
+  --negro: #1C1C1C;
+  --blanco: #FFFFFF;
+}
+
+/* ===== NAVBAR (NEGRO + TEXTO BEIGE/BLANCO) ===== */
+.navbar {
+  background-color: var(--negro);
+  color: var(--beige);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: var(--beige);
+}
+
+.navbar .nav-link:hover {
+  color: var(--blanco);
+}
+
+.navbar .nav-link.active {
+  color: var(--blanco);
+  font-weight: 700;
+}
+
+/* Para que el icono hamburguesa se vea en fondo oscuro */
+.navbar .navbar-toggler {
+  border-color: rgba(255,255,255,.35);
+}
+.navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* ===== CARRUSEL ===== */
+.carousel-item {
+  height: 420px;
+}
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ===== SECCIONES / FONDOS ===== */
+.bg-soft {
+  background: var(--beige);
+}
+
+/* ===== HERO / CARDS GENERALES ===== */
+.hero-section{
+  background: linear-gradient(180deg, var(--blanco) 0%, var(--beige) 100%);
+}
+
+.hero-card{
+  background: var(--blanco);
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+.hero-img{
+  max-height: 340px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-card{
+  background: var(--blanco);
+  border-radius: 1.25rem;
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.benefit-card{
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 1.25rem;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.benefit-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0,0,0,.08);
+}
+
+.icon-badge{
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+/* ===== PRODUCTOS ===== */
+.cat-box{
+  background: var(--blanco);
+  border: 1px solid rgba(0,0,0,.07);
+  border-radius: 18px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.cat-box:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0,0,0,.08);
+}
+.cat-img{
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.product-card{
+  border: 1px solid rgba(0,0,0,.07);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.product-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0,0,0,.08);
+}
+
+.product-img{
+  height: 210px;
+  object-fit: contain;
+  background: var(--blanco);
+  padding: 18px;
+}
+
+.info-box{
+  background: var(--beige);
+  border: 1px solid rgba(0,0,0,.07);
+  border-radius: 18px;
+}
+
+/* ===== FOOTER ===== */
+footer img:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
